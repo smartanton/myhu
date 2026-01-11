@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Display</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+    }
+
+    .image-container {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .image-container img {
+      display: block;
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    .taskbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .taskbar img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://pfst.cf2.poecdn.net/base/image/6dca17e1fa9aa7eceb4125b28c817cbbafe7a24951d44c31fc72b276c96f2d0b?w=1054&h=2048" alt="Image">
+  </div>
+
+  <nav class="taskbar">
+    <img src="https://pfst.cf2.poecdn.net/base/image/974338516966aeaca58c6dd9c53978577fbcf36ab404cf246d1d65d180c313b5?w=1054&h=145" alt="Taskbar">
+  </nav>
+</body>
+</html>
